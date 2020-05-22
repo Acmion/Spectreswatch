@@ -1,0 +1,102 @@
+
+.btn
+{
+    background: $bg-color;
+    border: thin solid $primary-color;
+
+    &:active,
+    &.btn-primary,
+    &.btn-primary:hover,
+    &.btn-primary:focus,
+    &.btn-primary:active
+    {
+        color: $dark-color;
+    }
+}
+
+.badge:not([data-badge])::after, 
+.badge[data-badge]::after,
+.empty,
+.nav .nav-item a
+{
+    color: $dark-color;
+}
+
+.nav .nav-item.active > a 
+{
+    color: $primary-color;
+}
+
+.form-input, 
+.form-select, 
+.form-checkbox .form-icon, 
+.form-radio .form-icon, 
+.form-switch .form-icon
+{
+    background: $bg-color;
+    border: thin solid $bg-color-light;
+}
+
+option,
+.chip
+{
+    background: $bg-color;
+}
+
+
+.input-group .input-group-addon
+{
+    border: thin solid $bg-color-light;
+}
+
+.form-input.is-success, .form-select.is-success, .has-success .form-input, .has-success .form-select
+{
+    background: $bg-color;
+    border: thin solid $success-color;
+}
+
+.form-input.is-error, .form-select.is-error, .has-error .form-input, .has-error .form-select
+{
+    background: $bg-color;
+    border: thin solid $error-color;
+}
+
+code
+{
+    background: $bg-color;
+}
+
+.modal-container
+{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.bg-primary,
+.bg-secondary, 
+.bg-gray
+{
+    color: $dark-color;
+}
+
+.bg-dark
+{
+    color: $light-color;
+}
+
+a:not(.btn)
+{
+    color: $link-color;
+
+    &:hover
+    {
+        color: $link-color-hover;
+    }
+
+    &:visited
+    {
+        color: $link-color-visited;
+    }
+}
+
+
+

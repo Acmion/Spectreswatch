@@ -1,0 +1,18 @@
+.docs-sidebar .accordion .menu .menu-item > a
+{
+  color: unset;
+}
+
+.docs-footer a
+{
+  color: unset;
+}
+
+@media (max-width: 960px)
+{
+  .docs-navbar
+  {
+    background: rgba(10, 10, 10, 1);
+    box-shadow: 0px 0rem 10px 0px #000;
+  }
+}
