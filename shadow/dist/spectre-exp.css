@@ -90,13 +90,13 @@
 .calendar .calendar-header {
   background: #0b0b0b;
   border-bottom: .05rem solid #1e1e1e;
-  color: #666;
+  color: #6f6f6f;
   font-size: .7rem;
   text-align: center;
 }
 
 .calendar .calendar-body {
-  color: #191919;
+  color: #3c3c3c;
 }
 
 .calendar .calendar-date {
@@ -111,7 +111,7 @@
   background: transparent;
   border: .05rem solid transparent;
   border-radius: 50%;
-  color: #191919;
+  color: #3c3c3c;
   cursor: pointer;
   font-size: .7rem;
   height: 1.4rem;
@@ -148,7 +148,7 @@
 .calendar .calendar-date .date-item.active {
   background: #0051e1;
   border-color: #0048c7;
-  color: #020202;
+  color: #f2f2f2;
 }
 
 .calendar .calendar-date .date-item.badge::after {
@@ -201,7 +201,7 @@
 .calendar .calendar-range.range-end .date-item {
   background: #0051e1;
   border-color: #0048c7;
-  color: #020202;
+  color: #f2f2f2;
 }
 
 .calendar .calendar-range .date-item {
@@ -292,7 +292,7 @@
 .carousel .carousel-locator:nth-of-type(6):checked ~ .carousel-nav .nav-item:nth-of-type(6),
 .carousel .carousel-locator:nth-of-type(7):checked ~ .carousel-nav .nav-item:nth-of-type(7),
 .carousel .carousel-locator:nth-of-type(8):checked ~ .carousel-nav .nav-item:nth-of-type(8) {
-  color: #999;
+  color: #a2a2a2;
 }
 
 .carousel {
@@ -335,9 +335,9 @@
 
 .carousel .carousel-container .item-prev,
 .carousel .carousel-container .item-next {
-  background: rgba(153, 153, 153, .25);
-  border-color: rgba(153, 153, 153, .5);
-  color: #999;
+  background: rgba(162, 162, 162, .25);
+  border-color: rgba(162, 162, 162, .5);
+  color: #a2a2a2;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -368,7 +368,7 @@
 }
 
 .carousel .carousel-nav .nav-item {
-  color: rgba(153, 153, 153, .5);
+  color: rgba(162, 162, 162, .5);
   display: block;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -466,7 +466,7 @@
   background: currentColor;
   border-radius: 50%;
   box-shadow: 0 -5px, 0 5px;
-  color: #020202;
+  color: #f2f2f2;
   content: "";
   height: 3px;
   position: absolute;
@@ -497,9 +497,9 @@
 }
 
 .comparison-slider .comparison-label {
-  background: rgba(242, 242, 242, .5);
+  background: rgba(2, 2, 2, .5);
   bottom: .8rem;
-  color: #020202;
+  color: #f2f2f2;
   padding: .2rem .4rem;
   position: absolute;
   -webkit-user-select: none;
@@ -536,7 +536,7 @@
 .filter .filter-tag#tag-7:checked ~ .filter-nav .chip[for="tag-7"],
 .filter .filter-tag#tag-8:checked ~ .filter-nav .chip[for="tag-8"] {
   background: #0057f0;
-  color: #020202;
+  color: #f2f2f2;
 }
 
 .filter .filter-tag#tag-1:checked ~ .filter-body .filter-item:not([data-tag~="tag-1"]),
@@ -659,7 +659,7 @@
 }
 
 .off-canvas .off-canvas-overlay {
-  background: rgba(242, 242, 242, .1);
+  background: rgba(2, 2, 2, .1);
   border-color: transparent;
   border-radius: 0;
   bottom: 0;
@@ -706,7 +706,7 @@
 }
 
 .parallax .parallax-content {
-  box-shadow: 0 1rem 2.1rem rgba(242, 242, 242, .3);
+  box-shadow: 0 1rem 2.1rem rgba(2, 2, 2, .3);
   height: auto;
   transform: perspective(1000px);
   transform-style: preserve-3d;
@@ -726,7 +726,7 @@
 
 .parallax .parallax-front {
   align-items: center;
-  color: #020202;
+  color: #f2f2f2;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -736,7 +736,7 @@
   left: 0;
   position: absolute;
   text-align: center;
-  text-shadow: 0 0 20px rgba(242, 242, 242, .75);
+  text-shadow: 0 0 20px rgba(2, 2, 2, .75);
   top: 0;
   transform: translateZ(50px) scale(.95);
   transition: transform .4s;
@@ -955,19 +955,19 @@
 
 .slider:disabled::-webkit-slider-thumb,
 .slider.disabled::-webkit-slider-thumb {
-  background: #999;
+  background: #a2a2a2;
   transform: scale(1);
 }
 
 .slider:disabled::-moz-range-thumb,
 .slider.disabled::-moz-range-thumb {
-  background: #999;
+  background: #a2a2a2;
   transform: scale(1);
 }
 
 .slider:disabled::-ms-thumb,
 .slider.disabled::-ms-thumb {
-  background: #999;
+  background: #a2a2a2;
   transform: scale(1);
 }
 
@@ -1027,7 +1027,7 @@
 .timeline .timeline-item .timeline-icon {
   align-items: center;
   border-radius: 50%;
-  color: #020202;
+  color: #f2f2f2;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;

@@ -1,30 +1,67 @@
 
 .btn
 {
+    color: $primary-color;
     background: $bg-color;
     border: thin solid $primary-color;
 
-    &:active,
-    &.btn-primary,
-    &.btn-primary:hover,
-    &.btn-primary:focus,
-    &.btn-primary:active
+    &:hover,
+    &:focus,
+    &:visited
     {
-        color: $dark-color;
+        color: $primary-color;
+    }
+
+    &:active
+    {
+        color: $light-color;
+    }
+
+    &.btn-error,
+    &.btn-success,
+    &.btn-primary
+    {
+        color: $light-color;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited
+        {
+            color: $light-color;
+        }
+    }
+
+    &.btn-link
+    {
+        color: $primary-color;
+
+        &:hover,
+        &:focus
+        {
+            color: $primary-color-dark;
+        }
+
+        &:visited
+        {
+            color: $primary-color;
+        }
+
+        &:active
+        {
+            color: $primary-color-light;
+        }
+
     }
 }
 
-.badge:not([data-badge])::after, 
-.badge[data-badge]::after,
-.empty,
-.nav .nav-item a
+.btn-group .btn.active, 
+.btn-group .btn:active, 
+.btn-group .btn:focus, 
+.btn-group .btn:hover
 {
-    color: $dark-color;
-}
-
-.nav .nav-item.active > a 
-{
-    color: $primary-color;
+    // Chrome subpixel rendering bug fix
+    z-index: unset;
 }
 
 .form-input, 
@@ -37,12 +74,21 @@
     border: thin solid $bg-color-light;
 }
 
+code,
 option,
-.chip
+.chip,
+.card,
+.menu,
+.form-select:not([multiple]):not([size])
 {
-    background: $bg-color;
+    background-color: $bg-color;
 }
 
+.empty,
+.modal-container .modal-header
+{
+    color: $body-font-color;
+}
 
 .input-group .input-group-addon
 {
@@ -55,15 +101,15 @@ option,
     border: thin solid $success-color;
 }
 
-.form-input.is-error, .form-select.is-error, .has-error .form-input, .has-error .form-select
+.form-input.is-error, 
+.form-select.is-error, 
+.has-error .form-input, 
+.has-error .form-select,
+.form-input:not(:placeholder-shown):invalid, 
+.form-input:not(:placeholder-shown):invalid:focus 
 {
     background: $bg-color;
     border: thin solid $error-color;
-}
-
-code
-{
-    background: $bg-color;
 }
 
 .modal-container
@@ -71,32 +117,44 @@ code
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.bg-primary,
-.bg-secondary, 
-.bg-gray
+.nav .nav-item
 {
-    color: $dark-color;
-}
-
-.bg-dark
-{
-    color: $light-color;
-}
-
-a:not(.btn)
-{
-    color: $link-color;
-
-    &:hover
+    & a
     {
-        color: $link-color-hover;
+        color: $link-color;
     }
 
-    &:visited
+    &.active > a 
     {
-        color: $link-color-visited;
-    }
+        color: $link-color;
+        font-weight: bold;
+    } 
 }
 
+.breadcrumb .breadcrumb-item
+{
+    color: $body-font-color;
 
+    &:not(:last-child) a,
+    &:not(:first-child)::before
+    {
+        color: unset;
+    }
 
+}
+
+/* WebKit autocomplete styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus 
+{
+    -webkit-text-fill-color: $body-font-color;
+    -webkit-box-shadow: 0 0 0 50px $webkit-autofill-bg-color inset;
+    transition: background-color 10000s ease-in-out 10000s;
+}

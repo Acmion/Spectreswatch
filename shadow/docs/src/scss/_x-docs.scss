@@ -3,9 +3,18 @@
   color: unset;
 }
 
+.docs-footer
+{
+ color: $body-font-color; 
+}
 .docs-footer a
 {
-  color: unset;
+  color: $link-color;
+}
+
+.docs-content .code .hljs-comment
+{
+  color: #fff;
 }
 
 @media (max-width: 960px)
@@ -15,4 +24,15 @@
     background: rgba(10, 10, 10, 1);
     box-shadow: 0px 0rem 10px 0px #000;
   }
+}
+
+.docs-content .s-subtitle::before, .docs-content .s-title::before
+{
+  background: $body-bg;
+}
+
+.docs-sidebar .accordion input~.accordion-header,
+.docs-sidebar .accordion input:checked~.accordion-header
+{
+  color: unset;
 }

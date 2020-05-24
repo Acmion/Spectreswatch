@@ -13,10 +13,10 @@ $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
-$dark-color: #F2F2F2 !default;
-$light-color: #020202 !default;
-$gray-color: darken($dark-color, 55%) !default;
-$gray-color-dark: darken($gray-color, 30%) !default;
+$dark-color: #020202 !default;
+$light-color: #F2F2F2 !default;
+$gray-color: #6F6F6F !default;
+$gray-color-dark: darken($gray-color, 20%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
 $border-color: #1E1E1E !default;
@@ -30,12 +30,13 @@ $bg-color-light: lighten($bg-color, 10%) !default;
 $success-color: #32b643 !default;
 $warning-color: #ffb700 !default;
 $error-color: #C22121 !default;
+$webkit-autofill-bg-color: $bg-color !default;
 
 // Other colors
 $code-color: #d73e48 !default;
 $highlight-color: rgba(255, 255, 255, 0.12) !default;
-$body-bg: $light-color !default;
-$body-font-color: lighten($dark-color, 5%) !default;
+$body-bg: $dark-color !default;
+$body-font-color: $light-color !default;
 $link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 10%) !default;
 $link-color-light: lighten($link-color, 10%) !default;
@@ -115,7 +116,3 @@ $zindex-1: 100 !default;
 $zindex-2: 200 !default;
 $zindex-3: 300 !default;
 $zindex-4: 400 !default;
-
-$link-color: #0087FF !default;
-$link-color-hover: lighten($link-color, 10%);
-$link-color-visited: darken($link-color, 5%);

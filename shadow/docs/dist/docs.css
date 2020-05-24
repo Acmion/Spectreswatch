@@ -57,14 +57,14 @@
 }
 
 .docs-sidebar .accordion input ~ .accordion-header {
-  color: white;
+  color: #1c1b1b;
   font-size: .65rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .docs-sidebar .accordion input:checked ~ .accordion-header {
-  color: white;
+  color: #282828;
 }
 
 .docs-sidebar .accordion .menu .menu-item {
@@ -74,7 +74,7 @@
 
 .docs-sidebar .accordion .menu .menu-item > a {
   background: transparent;
-  color: #191919;
+  color: #3c3c3c;
   display: inline-block;
 }
 
@@ -123,7 +123,7 @@
   }
   .docs-content .s-title::before,
   .docs-content .s-subtitle::before {
-    background: #020202;
+    background: #f2f2f2;
     bottom: 0;
     content: "";
     display: block;
@@ -152,7 +152,7 @@
 
 .docs-content .docs-demo .card {
   border: 0;
-  box-shadow: 0 .25rem 1rem rgba(242, 242, 242, .15);
+  box-shadow: 0 .25rem 1rem rgba(2, 2, 2, .15);
   height: 100%;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .docs-content .code .hljs-comment {
-  color: #666;
+  color: #6f6f6f;
 }
 
 .docs-content .code .hljs-title,
@@ -256,7 +256,7 @@
   align-items: center;
   background: #0057f0;
   border-radius: .1rem;
-  color: #020202;
+  color: #f2f2f2;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -332,12 +332,12 @@
 }
 
 .docs-footer {
-  color: #666;
+  color: #6f6f6f;
   padding: .5rem;
 }
 
 .docs-footer a {
-  color: #191919;
+  color: #3c3c3c;
 }
 
 .docs-ad {
@@ -359,13 +359,13 @@
 }
 
 .docs-ad .carbon-wrap .carbon-text {
-  color: #191919;
+  color: #3c3c3c;
   display: block;
   font-size: .7rem;
 }
 
 .docs-ad .carbon-poweredby {
-  color: #666;
+  color: #6f6f6f;
   font-size: .7rem;
 }
 
@@ -409,14 +409,14 @@
 }
 
 .section-footer {
-  color: #666;
+  color: #6f6f6f;
   padding: 1.8rem .75rem 1rem;
   position: relative;
   z-index: 200;
 }
 
 .section-footer a {
-  color: #191919;
+  color: #3c3c3c;
 }
 
 .grid-hero {
@@ -425,7 +425,7 @@
 }
 
 .grid-hero h1 {
-  color: white;
+  color: #f2f2f2;
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -745,7 +745,7 @@
   background: transparent;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 .05rem .2rem rgba(242, 242, 242, .3); 
+  box-shadow: 0 .05rem .2rem rgba(2, 2, 2, .3); 
   height: auto;
   margin: 6px 0 0;
   max-width: 600px;
@@ -790,7 +790,7 @@
 
 .algolia-autocomplete .algolia-docsearch-suggestion {
   background: #fff;
-  color: #f2f2f2;
+  color: #020202;
   display: block;
   overflow: hidden; 
   padding: 0 8px;
@@ -828,7 +828,7 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--content:before {
-  background: #999;
+  background: #a2a2a2;
   content: "";
   display: block;
   height: 100%;
@@ -839,8 +839,8 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-  border-bottom: 1px solid #999;
-  color: #f2f2f2; 
+  border-bottom: 1px solid #a2a2a2;
+  color: #020202; 
   display: none;
   font-size: 1em;
   margin-top: 8px;
@@ -855,7 +855,7 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
-  color: #666;
+  color: #6f6f6f;
   float: left;
   font-size: .9em;
   padding: 5.33333px 10.66667px;
@@ -866,7 +866,7 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before {
-  background: #999;
+  background: #a2a2a2;
   content: "";
   display: block;
   height: 100%;
@@ -881,13 +881,13 @@
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--title {
-  color: #f2f2f2;
+  color: #020202;
   font-size: .9em;
   font-weight: 700;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--text {
-  color: #191919; 
+  color: #3c3c3c; 
   display: block;
   font-size: .85em;
   line-height: 1.2em;
@@ -1069,8 +1069,16 @@
   color: unset;
 }
 
+.docs-footer {
+  color: #f2f2f2;
+}
+
 .docs-footer a {
-  color: unset;
+  color: #0057f0;
+}
+
+.docs-content .code .hljs-comment {
+  color: #fff;
 }
 
 @media (max-width: 960px) {
@@ -1078,4 +1086,14 @@
     background: #0a0a0a;
     box-shadow: 0 0rem 10px 0 #000;
   }
+}
+
+.docs-content .s-subtitle::before,
+.docs-content .s-title::before {
+  background: #020202;
+}
+
+.docs-sidebar .accordion input ~ .accordion-header,
+.docs-sidebar .accordion input:checked ~ .accordion-header {
+  color: unset;
 }
