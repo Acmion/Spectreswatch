@@ -9,14 +9,14 @@
 
 .off-canvas {
   .off-canvas-toggle {
-    font-size: 1rem;
-    left: 1.5rem;
+    font-size: 1rem * 2;
+    left: 1.5rem * 2;
     position: fixed;
-    top: 1rem;
+    top: 1rem * 2;
   }
 
   .off-canvas-sidebar {
-    width: 12rem;
+    width: 12rem * 2;
   }
 
   .off-canvas-content {
@@ -29,7 +29,7 @@
 }
 
 .docs-navbar {
-  height: 3.8rem;
+  height: 3.8rem * 2;
   position: fixed;
   right: 0;
   top: 0;
@@ -37,9 +37,9 @@
 
   .btns {
     position: absolute;
-    right: 1.5rem;
-    top: 1rem;
-    width: 14rem;
+    right: 1.5rem * 2;
+    top: 1rem * 2;
+    width: 14rem * 2;
   }
 
   .algolia-autocomplete {
@@ -49,22 +49,22 @@
 
 .docs-sidebar {
   .docs-nav {
-    bottom: 1.5rem;
+    bottom: 1.5rem * 2;
     overflow-y: auto;
-    padding: .5rem 1.5rem;
+    padding: .5rem * 2 1.5rem * 2;
     position: fixed;
-    top: 3.5rem;
-    width: 12rem;
+    top: 3.5rem * 2;
+    width: 12rem * 2;
     -webkit-overflow-scrolling: touch;
   }
 
   .accordion {
-    margin-bottom: .75rem;
+    margin-bottom: .75rem * 2;
 
     input {
       & ~ .accordion-header {
         color: lighten($dark-color, 10%);
-        font-size: .65rem;
+        font-size: .65rem * 2;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -78,8 +78,8 @@
 
     .menu {
       .menu-item {
-        font-size: .7rem;
-        padding-left: 1rem;
+        font-size: .7rem * 2;
+        padding-left: 1rem * 2;
         
         & > a {
           background: transparent;
@@ -93,20 +93,20 @@
 
 .docs-content {
   flex: 1 1 auto;
-  padding: 0 4rem;
-  width: calc(100vw - 12rem);
+  padding: 0 4rem * 2;
+  width: calc(100vw - 12rem * 2);
 
   & > .container {
     margin-left: 0;
     max-width: 800px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem * 2;
   }
 
   .anchor {
     color: $primary-color-light;
     display: none;
-    margin-left: .2rem;
-    padding: 0 .2rem;
+    margin-left: .2rem * 2;
+    padding: 0 .2rem * 2;
     &:focus,
     &:hover {
       display: inline;
@@ -116,10 +116,10 @@
   
   .s-title,
   .s-subtitle {
-    line-height: 1.8rem;
+    line-height: 1.8rem * 2;
     margin-bottom: 0;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 1rem * 2;
+    padding-top: 1rem * 2;
     position: static;
 
     @supports (position: sticky) {
@@ -147,16 +147,16 @@
     }
 
     & + .docs-note {
-      margin-top: .4rem;
+      margin-top: .4rem * 2;
     }
   }
 
   .docs-demo {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 1rem * 2;
+    padding-top: 1rem * 2;
 
     .card {
-      box-shadow: 0 .25rem 1rem rgba($dark-color, .15);
+      box-shadow: 0 .25rem * 2 1rem * 2 rgba($dark-color, .15);
       border: 0;
       height: 100%;
     }
@@ -176,31 +176,31 @@
   }
 
   .docs-shape {
-    height: 4.8rem;
-    line-height: 1.2rem;
-    padding: 1.8rem 0;
-    width: 4.8rem;
+    height: 4.8rem * 2;
+    line-height: 1.2rem * 2;
+    padding: 1.8rem * 2 0;
+    width: 4.8rem * 2;
   }
 
   .docs-dot {
     border-radius: 50%;
     display: inline-block;
-    height: .5rem;
+    height: .5rem * 2;
     padding: 0;
-    width: .5rem;
+    width: .5rem * 2;
   }
 
   .docs-table {
     th,
     td {
-      padding: .75rem .25rem;
+      padding: .75rem * 2 .25rem * 2;
     }
   }
 
   .docs-color {
     border-radius: $border-radius;
-    margin: .25rem 0;
-    padding: 5rem .5rem .5rem;
+    margin: .25rem * 2 0;
+    padding: 5rem * 2 .5rem * 2 .5rem * 2;
 
     .color-subtitle {
       font-size: $font-size-sm;
@@ -246,12 +246,12 @@
     height: 75vh;
 
     .tile {
-      margin: .75rem 0;
+      margin: .75rem * 2 0;
     }
   }
 
   .parallax {
-    margin: 2rem auto;
+    margin: 2rem * 2 auto;
   }
 
   .form-autocomplete .menu {
@@ -265,9 +265,9 @@
     border-radius: $border-radius;
     color: $light-color;
     display: flex;
-    font-size: 1.2rem;
-    height: 2rem;
-    width: 2rem;
+    font-size: 1.2rem * 2;
+    height: 2rem * 2;
+    width: 2rem * 2;
 
     .icon {
       margin: auto;
@@ -297,18 +297,18 @@
 
 .docs-brand {
   color: $primary-color;
-  height: 2rem;
-  left: 1.5rem;
+  height: 2rem * 2;
+  left: 1.5rem * 2;
   position: fixed;
-  top: .85rem;
+  top: .85rem * 2;
 
   .docs-logo {
     align-items: center;
     border-radius: $border-radius;
     display: inline-flex;
-    font-size: .7rem;
-    height: 2rem;
-    padding: .2rem;
+    font-size: .7rem * 2;
+    height: 2rem * 2;
+    padding: .2rem * 2;
     width: auto;
     
     &:focus,
@@ -319,24 +319,24 @@
     img {
       display: inline-block;
       height: auto;
-      width: 1.6rem;
+      width: 1.6rem * 2;
     }
   
     h2 {
       display: inline-block;
-      font-size: .8rem;
+      font-size: .8rem * 2;
       font-weight: 700;
-      line-height: 1.5rem;
+      line-height: 1.5rem * 2;
       margin-bottom: 0;
-      margin-left: .5rem;
-      margin-right: .3rem;
+      margin-left: .5rem * 2;
+      margin-right: .3rem * 2;
     }
   }
 }
 
 .docs-footer {
   color: $gray-color;
-  padding: .5rem;
+  padding: .5rem * 2;
 
   a {
     color: $gray-color-dark;
@@ -347,7 +347,7 @@
   background: $bg-color;
   border-radius: $border-radius;
   display: block;
-  margin: 2rem 0;
+  margin: 2rem * 2 0;
   padding: $layout-spacing;
   position: relative;
 
@@ -376,11 +376,11 @@
 
 /* Spectre Homepage style */
 .section-hero {
-  padding: 1rem .5rem;
+  padding: 1rem * 2 .5rem * 2;
 
   .docs-brand {
     position: absolute;
-    top: .85rem;
+    top: .85rem * 2;
 
     h2 {
       color: $primary-color;
@@ -393,20 +393,20 @@
 }
 
 .section-ads {
-  padding: 1rem .5rem;
+  padding: 1rem * 2 .5rem * 2;
 }
 
 .section-updates {
-  padding: 4.5rem .5rem 2.5rem .5rem;
+  padding: 4.5rem * 2 .5rem * 2 2.5rem * 2 .5rem * 2;
 
   .card {
     border: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem * 2;
   }
 }
 
 .section-features {
-  padding: 4.5rem .5rem;
+  padding: 4.5rem * 2 .5rem * 2;
 
   .column {
     padding: $layout-spacing;
@@ -415,7 +415,7 @@
 
 .section-footer {
   color: $gray-color;
-  padding: 1.8rem .75rem 1rem;
+  padding: 1.8rem * 2 .75rem * 2 1rem * 2;
   position: relative;
   z-index: 200;
 
@@ -425,22 +425,22 @@
 }
 
 .grid-hero {
-  padding-bottom: 2rem;
-  padding-top: 6rem;
+  padding-bottom: 2rem * 2;
+  padding-top: 6rem * 2;
 
   h1 {
     color: $body-font-color;
-    font-size: 1.6rem;
+    font-size: 1.6rem * 2;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem * 2;
   }
 
   h2 {
     color: lighten($body-font-color, 5%);
-    font-size: .9rem;
+    font-size: .9rem * 2;
     font-weight: 400;
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
+    line-height: 1.5rem * 2;
+    margin-bottom: 1.5rem * 2;
 
     u {
       border-bottom: $border-width-lg solid currentColor;
@@ -453,11 +453,11 @@
     background: none;
     border: 0;
     color: lighten($body-font-color, 15%);
-    padding: .5rem;
+    padding: .5rem * 2;
 
     .card-title {
       color: $primary-color;
-      font-size: 1rem;
+      font-size: 1rem * 2;
       font-weight: 700;
       margin-bottom: 0;
     }
@@ -477,18 +477,18 @@
 
   .docs-sidebar {
     .docs-brand {
-      margin: .85rem 1.5rem;
+      margin: .85rem * 2 1.5rem * 2;
       padding: 0;
       position: static;
     }
 
     .docs-nav {
-      margin-top: 1rem;
+      margin-top: 1rem * 2;
       position: static;
     }
 
     .menu .menu-item > a {
-      padding: .3rem .4rem;
+      padding: .3rem * 2 .4rem * 2;
     }
   }
 
@@ -500,12 +500,12 @@
 
   .docs-content {
     min-width: auto;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem * 2;
     width: 100%;
 
     .s-title,
     .s-subtitle {
-      padding-top: 5rem;
+      padding-top: 5rem * 2;
       position: static;
 
       &::before {
@@ -516,8 +516,8 @@
 
   .section-hero {
     .s-brand {
-      height: 5rem;
-      padding: 1.5rem .5rem;
+      height: 5rem * 2;
+      padding: 1.5rem * 2 .5rem * 2;
       text-align: center;
       width: 100%;
 
@@ -526,8 +526,8 @@
       }
 
       img {
-        height: 3.2rem;
-        width: 3.2rem;
+        height: 3.2rem * 2;
+        width: 3.2rem * 2;
       }
 
       h2 {
@@ -540,7 +540,7 @@
 @media (max-width: 600px) {
   .grid-hero {
     h2 {
-      font-size: .9rem;
+      font-size: .9rem * 2;
     }
     .card {
       padding: 0;
@@ -549,34 +549,34 @@
   
   .off-canvas {
     .off-canvas-toggle {
-      left: .5rem;
+      left: .5rem * 2;
     }
   }
 
   .docs-navbar {
     .btns {
-      right: .9rem;
+      right: .9rem * 2;
     }
   }
 
   .grid-hero {
     .docs-brand {
-      left: .9rem;
+      left: .9rem * 2;
     }
   }
 
   .docs-sidebar {
     .docs-brand {
-      margin: .85rem 1rem;
+      margin: .85rem * 2 1rem * 2;
     }
   
     .docs-nav {
-      padding: .5rem 1rem;
+      padding: .5rem * 2 1rem * 2;
     }
   }
 
   .docs-content {
-    padding: 0 .5rem;
+    padding: 0 .5rem * 2;
 
     .docs-block {
       padding: $unit-2 $unit-h;
@@ -587,11 +587,11 @@
 @media (min-width: 1366px) {
   .docs-ad {
     &.docs-ad-sidebar {
-      bottom: 1rem;
+      bottom: 1rem * 2;
       margin: 0;
       position: fixed;
-      right: 1rem;
-      width: 7.3rem;
+      right: 1rem * 2;
+      width: 7.3rem * 2;
     }
   }
 }
@@ -778,7 +778,7 @@
     z-index: 999;
     max-width: 600px;
     min-width: 500px;
-    @include shadow-variant(.05rem);
+    @include shadow-variant(.05rem * 2);
 
     .ds-suggestions {
       position: relative;

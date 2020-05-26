@@ -165,7 +165,7 @@
         border-right: $border-width solid $border-color;
         display: flex;
         flex-direction: column;
-        height: 5.5rem;
+        height: 5.5rem * 2;
         padding: 0;
 
         &:nth-child(7n) {

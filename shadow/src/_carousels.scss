@@ -62,10 +62,10 @@ $carousel-number: 8;
       z-index: $zindex-1;
     }
     .item-prev {
-      left: 1rem;
+      left: 1rem * 2;
     }
     .item-next {
-      right: 1rem;
+      right: 1rem * 2;
     }
   }
 
@@ -90,7 +90,7 @@ $carousel-number: 8;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: 10rem;
+    width: 10rem * 2;
     z-index: $zindex-1;
 
     .nav-item {
@@ -99,7 +99,7 @@ $carousel-number: 8;
       flex: 1 0 auto;
       height: $unit-8;
       margin: $unit-1;
-      max-width: 2.5rem;
+      max-width: 2.5rem * 2;
       position: relative;
 
       &::before {
@@ -108,7 +108,7 @@ $carousel-number: 8;
         display: block;
         height: $unit-h;
         position: absolute;
-        top: .5rem;
+        top: .5rem * 2;
         width: 100%;
       }
     }

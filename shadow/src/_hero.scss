@@ -3,17 +3,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 4rem * 2;
+  padding-top: 4rem * 2;
 
   &.hero-sm {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem * 2;
+    padding-top: 2rem * 2;
   }
 
   &.hero-lg {
-    padding-bottom: 8rem;
-    padding-top: 8rem;
+    padding-bottom: 8rem * 2;
+    padding-top: 8rem * 2;
   }
 
   .hero-body {

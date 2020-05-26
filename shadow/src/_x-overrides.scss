@@ -7,12 +7,14 @@
 
     &:hover,
     &:focus,
-    &:visited
+    &:visited,
+    &:visited:hover
     {
-        color: $primary-color;
+        color: $primary-color-light;
     }
 
-    &:active
+    &:active,
+    &:active:hover
     {
         color: $light-color;
     }
@@ -26,7 +28,8 @@
         &:hover,
         &:focus,
         &:active,
-        &:visited
+        &:visited,
+        &:visited:hover
         {
             color: $light-color;
         }
@@ -42,12 +45,14 @@
             color: $primary-color-dark;
         }
 
-        &:visited
+        &:visited,
+        &:visited:hover
         {
             color: $primary-color;
         }
 
-        &:active
+        &:active,
+        &:active:hover
         {
             color: $primary-color-light;
         }
@@ -157,4 +162,45 @@ select:-webkit-autofill:focus
     -webkit-text-fill-color: $body-font-color;
     -webkit-box-shadow: 0 0 0 50px $webkit-autofill-bg-color inset;
     transition: background-color 10000s ease-in-out 10000s;
+}
+
+.content
+{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+
+    @media screen and (min-width: $size-lg)
+    {
+        max-width: $size-lg - 2 * $content-gap;
+    }
+
+    @media screen and (min-width: $size-xl)
+    {
+        max-width: $size-xl - 2 * $content-gap;
+    }
+
+    @media screen and (min-width: $size-2x)
+    {
+        max-width: $size-2x - 2 * $content-gap;
+    }
+}
+
+a:focus,
+a:visited,
+a:visited:focus
+{
+    color: $link-color-visited;
+}
+
+a:hover,
+a:visited:hover
+{
+    color: $link-color-hover;
+}
+
+.text-dark
+{
+    color: $dark-color !important;
 }

@@ -24,7 +24,7 @@ $off-canvas-breakpoint: $size-lg !default;
   .off-canvas-sidebar {
     background: $bg-color;
     bottom: 0;
-    min-width: 10rem;
+    min-width: 10rem * 2;
     overflow-y: auto;
     position: fixed;
     top: 0;
@@ -42,7 +42,7 @@ $off-canvas-breakpoint: $size-lg !default;
   .off-canvas-content {
     flex: 1 1 auto;
     height: 100%;
-    padding: $layout-spacing $layout-spacing $layout-spacing 4rem;
+    padding: $layout-spacing $layout-spacing $layout-spacing 4rem * 2;
   }
 
   .off-canvas-overlay {

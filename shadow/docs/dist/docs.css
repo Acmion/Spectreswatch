@@ -1,17 +1,50 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
+:root {
+  --bg-color: #0b0b0b;
+  --bg-color-dark: #060606;
+  --bg-color-light: #252424;
+  --body-bg: #020202;
+  --body-font-color: #f2f2f2;
+  --border-color: #1e1e1e;
+  --border-color-dark: #050404;
+  --border-color-light: #323232;
+  --code-color: #d73e48;
+  --dark-color: #020202;
+  --error-color: #c22121;
+  --gray-color: #6f6f6f;
+  --gray-color-dark: #3c3c3c;
+  --gray-color-light: #a2a2a2;
+  --highlight-color: rgba(255, 255, 255, .12);
+  --light-color: #f2f2f2;
+  --link-color: #2473ff;
+  --link-color-dark: #0057f0;
+  --link-color-hover: #5794ff;
+  --link-color-light: #5794ff;
+  --link-color-visited: #2473ff; 
+  --primary-color: #0057f0;
+  --primary-color-dark: #004ed7;
+  --primary-color-light: #2473ff;
+  --secondary-color: #0f0f0f;
+  --secondary-color-dark: #070707;
+  --secondary-color-light: #171717;
+  --success-color: #32b643;
+  --warning-color: #ffb700;
+  --webkit-autofill-bg-color: #0b0b0b;
+}
+
 .version::after {
   content: "0.5.8";
 }
 
 .off-canvas .off-canvas-toggle {
-  font-size: 1rem;
-  left: 1.5rem;
+  font-size: 2rem;
+  left: 3rem;
   position: fixed;
-  top: 1rem;
+  top: 2rem;
 }
 
 .off-canvas .off-canvas-sidebar {
-  width: 12rem;
+  width: 24rem;
 }
 
 .off-canvas .off-canvas-content {
@@ -23,7 +56,7 @@
 }
 
 .docs-navbar {
-  height: 3.8rem;
+  height: 7.6rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -32,9 +65,9 @@
 
 .docs-navbar .btns {
   position: absolute;
-  right: 1.5rem;
-  top: 1rem;
-  width: 14rem;
+  right: 3rem;
+  top: 2rem;
+  width: 28rem;
 }
 
 .docs-navbar .algolia-autocomplete {
@@ -43,22 +76,22 @@
 }
 
 .docs-sidebar .docs-nav {
-  bottom: 1.5rem;
+  bottom: 3rem;
   -webkit-overflow-scrolling: touch; 
   overflow-y: auto;
-  padding: .5rem 1.5rem;
+  padding: 1rem 3rem;
   position: fixed;
-  top: 3.5rem;
-  width: 12rem;
+  top: 7rem;
+  width: 24rem;
 }
 
 .docs-sidebar .accordion {
-  margin-bottom: .75rem;
+  margin-bottom: 1.5rem;
 }
 
 .docs-sidebar .accordion input ~ .accordion-header {
   color: #1c1b1b;
-  font-size: .65rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -68,8 +101,8 @@
 }
 
 .docs-sidebar .accordion .menu .menu-item {
-  font-size: .7rem;
-  padding-left: 1rem;
+  font-size: 1.4rem;
+  padding-left: 2rem;
 }
 
 .docs-sidebar .accordion .menu .menu-item > a {
@@ -81,21 +114,21 @@
 .docs-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 0 4rem;
-  width: calc(100vw - 12rem);
+  padding: 0 8rem;
+  width: calc(100vw - 12rem * 2);
 }
 
 .docs-content > .container {
   margin-left: 0;
   max-width: 800px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .docs-content .anchor {
-  color: #005dff;
+  color: #2473ff;
   display: none;
-  margin-left: .2rem;
-  padding: 0 .2rem;
+  margin-left: .4rem;
+  padding: 0 .4rem;
 }
 
 .docs-content .anchor:focus,
@@ -106,10 +139,10 @@
 
 .docs-content .s-title,
 .docs-content .s-subtitle {
-  line-height: 1.8rem;
+  line-height: 3.6rem;
   margin-bottom: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   position: static;
 }
 
@@ -142,61 +175,61 @@
 
 .docs-content .s-title + .docs-note,
 .docs-content .s-subtitle + .docs-note {
-  margin-top: .4rem;
+  margin-top: .8rem;
 }
 
 .docs-content .docs-demo {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .docs-content .docs-demo .card {
   border: 0;
-  box-shadow: 0 .25rem 1rem rgba(2, 2, 2, .15);
+  box-shadow: 0 .5rem 2rem rgba(2, 2, 2, .15);
   height: 100%;
 }
 
 .docs-content .column {
-  padding: .4rem;
+  padding: .8rem;
 }
 
 .docs-content .docs-block {
-  border-radius: .1rem;
-  padding: .4rem;
+  border-radius: .2rem;
+  padding: .8rem;
 }
 
 .docs-content .docs-block.bg-gray {
-  background: black;
+  background: #060606;
 }
 
 .docs-content .docs-shape {
-  height: 4.8rem;
-  line-height: 1.2rem;
-  padding: 1.8rem 0;
-  width: 4.8rem;
+  height: 9.6rem;
+  line-height: 2.4rem;
+  padding: 3.6rem 0;
+  width: 9.6rem;
 }
 
 .docs-content .docs-dot {
   border-radius: 50%;
   display: inline-block;
-  height: .5rem;
+  height: 1rem;
   padding: 0;
-  width: .5rem;
+  width: 1rem;
 }
 
 .docs-content .docs-table th,
 .docs-content .docs-table td {
-  padding: .75rem .25rem;
+  padding: 1.5rem .5rem;
 }
 
 .docs-content .docs-color {
-  border-radius: .1rem;
-  margin: .25rem 0;
-  padding: 5rem .5rem .5rem;
+  border-radius: .2rem;
+  margin: .5rem 0;
+  padding: 10rem 1rem 1rem;
 }
 
 .docs-content .docs-color .color-subtitle {
-  font-size: .7rem;
+  font-size: 1.4rem;
   opacity: .75;
 }
 
@@ -240,11 +273,11 @@
 }
 
 .docs-content .panel .tile {
-  margin: .75rem 0;
+  margin: 1.5rem 0;
 }
 
 .docs-content .parallax {
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .docs-content .form-autocomplete .menu {
@@ -255,15 +288,15 @@
   align-content: space-around;
   align-items: center;
   background: #0057f0;
-  border-radius: .1rem;
+  border-radius: .2rem;
   color: #f2f2f2;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
-  font-size: 1.2rem;
-  height: 2rem;
-  width: 2rem;
+  font-size: 2.4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .docs-content .example-tile-icon .icon {
@@ -284,29 +317,29 @@
 }
 
 .docs-content .off-canvas .off-canvas-toggle {
-  left: .4rem;
+  left: .8rem;
   position: absolute;
-  top: .4rem;
+  top: .8rem;
   z-index: 1;
 }
 
 .docs-brand {
   color: #0057f0;
-  height: 2rem;
-  left: 1.5rem;
+  height: 4rem;
+  left: 3rem;
   position: fixed;
-  top: .85rem;
+  top: 1.7rem;
 }
 
 .docs-brand .docs-logo {
   align-items: center;
-  border-radius: .1rem;
+  border-radius: .2rem;
   display: inline-flex;
   display: -ms-inline-flexbox;
   -ms-flex-align: center;
-  font-size: .7rem;
-  height: 2rem;
-  padding: .2rem;
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: .4rem;
   width: auto;
 }
 
@@ -318,22 +351,22 @@
 .docs-brand .docs-logo img {
   display: inline-block;
   height: auto;
-  width: 1.6rem;
+  width: 3.2rem;
 }
 
 .docs-brand .docs-logo h2 {
   display: inline-block;
-  font-size: .8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.5rem;
+  line-height: 3rem;
   margin-bottom: 0;
-  margin-left: .5rem;
-  margin-right: .3rem;
+  margin-left: 1rem;
+  margin-right: .6rem;
 }
 
 .docs-footer {
   color: #6f6f6f;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .docs-footer a {
@@ -342,10 +375,10 @@
 
 .docs-ad {
   background: #0b0b0b;
-  border-radius: .1rem;
+  border-radius: .2rem;
   display: block;
-  margin: 2rem 0;
-  padding: .4rem;
+  margin: 4rem 0;
+  padding: .8rem;
   position: relative;
 }
 
@@ -361,22 +394,22 @@
 .docs-ad .carbon-wrap .carbon-text {
   color: #3c3c3c;
   display: block;
-  font-size: .7rem;
+  font-size: 1.4rem;
 }
 
 .docs-ad .carbon-poweredby {
   color: #6f6f6f;
-  font-size: .7rem;
+  font-size: 1.4rem;
 }
 
 /* Spectre Homepage style */
 .section-hero {
-  padding: 1rem .5rem;
+  padding: 2rem 1rem;
 }
 
 .section-hero .docs-brand {
   position: absolute;
-  top: .85rem;
+  top: 1.7rem;
 }
 
 .section-hero .docs-brand h2 {
@@ -384,33 +417,33 @@
 }
 
 .section-hero .column {
-  padding: .4rem;
+  padding: .8rem;
 }
 
 .section-ads {
-  padding: 1rem .5rem;
+  padding: 2rem 1rem;
 }
 
 .section-updates {
-  padding: 4.5rem .5rem 2.5rem .5rem;
+  padding: 9rem 1rem 5rem 1rem;
 }
 
 .section-updates .card {
   border: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section-features {
-  padding: 4.5rem .5rem;
+  padding: 9rem 1rem;
 }
 
 .section-features .column {
-  padding: .4rem;
+  padding: .8rem;
 }
 
 .section-footer {
   color: #6f6f6f;
-  padding: 1.8rem .75rem 1rem;
+  padding: 3.6rem 1.5rem 2rem;
   position: relative;
   z-index: 200;
 }
@@ -420,28 +453,28 @@
 }
 
 .grid-hero {
-  padding-bottom: 2rem;
-  padding-top: 6rem;
+  padding-bottom: 4rem;
+  padding-top: 12rem;
 }
 
 .grid-hero h1 {
   color: #f2f2f2;
-  font-size: 1.6rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .grid-hero h2 {
   color: white;
-  font-size: .9rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 .grid-hero h2 u {
-  border-bottom: .1rem solid currentColor;
-  padding-bottom: .05rem;
+  border-bottom: .2rem solid currentColor;
+  padding-bottom: .1rem;
   text-decoration: none;
 }
 
@@ -449,12 +482,12 @@
   background: none;
   border: 0;
   color: white;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .grid-hero .card .card-title {
   color: #0057f0;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -467,16 +500,16 @@
     width: 100%;
   }
   .docs-sidebar .docs-brand {
-    margin: .85rem 1.5rem;
+    margin: 1.7rem 3rem;
     padding: 0;
     position: static;
   }
   .docs-sidebar .docs-nav {
-    margin-top: 1rem;
+    margin-top: 2rem;
     position: static;
   }
   .docs-sidebar .menu .menu-item > a {
-    padding: .3rem .4rem;
+    padding: .6rem .8rem;
   }
   .docs-navbar {
     -webkit-backdrop-filter: blur(5px);
@@ -486,12 +519,12 @@
   }
   .docs-content {
     min-width: auto;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
     width: 100%;
   }
   .docs-content .s-title,
   .docs-content .s-subtitle {
-    padding-top: 5rem;
+    padding-top: 10rem;
     position: static;
   }
   .docs-content .s-title::before,
@@ -499,8 +532,8 @@
     content: none;
   }
   .section-hero .s-brand {
-    height: 5rem;
-    padding: 1.5rem .5rem;
+    height: 10rem;
+    padding: 3rem 1rem;
     text-align: center;
     width: 100%;
   }
@@ -508,8 +541,8 @@
     height: auto;
   }
   .section-hero .s-brand img {
-    height: 3.2rem;
-    width: 3.2rem;
+    height: 6.4rem;
+    width: 6.4rem;
   }
   .section-hero .s-brand h2 {
     display: none;
@@ -518,41 +551,41 @@
 
 @media (max-width: 600px) {
   .grid-hero h2 {
-    font-size: .9rem;
+    font-size: 1.8rem;
   }
   .grid-hero .card {
     padding: 0;
   }
   .off-canvas .off-canvas-toggle {
-    left: .5rem;
+    left: 1rem;
   }
   .docs-navbar .btns {
-    right: .9rem;
+    right: 1.8rem;
   }
   .grid-hero .docs-brand {
-    left: .9rem;
+    left: 1.8rem;
   }
   .docs-sidebar .docs-brand {
-    margin: .85rem 1rem;
+    margin: 1.7rem 2rem;
   }
   .docs-sidebar .docs-nav {
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
   }
   .docs-content {
-    padding: 0 .5rem;
+    padding: 0 1rem;
   }
   .docs-content .docs-block {
-    padding: .4rem .1rem;
+    padding: .8rem .2rem;
   }
 }
 
 @media (min-width: 1366px) {
   .docs-ad.docs-ad-sidebar {
-    bottom: 1rem;
+    bottom: 2rem;
     margin: 0;
     position: fixed;
-    right: 1rem;
-    width: 7.3rem;
+    right: 2rem;
+    width: 14.6rem;
   }
 }
 
@@ -745,7 +778,7 @@
   background: transparent;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 .05rem .2rem rgba(2, 2, 2, .3); 
+  box-shadow: 0 .1rem .3rem rgba(2, 2, 2, .3); 
   height: auto;
   margin: 6px 0 0;
   max-width: 600px;
@@ -1074,7 +1107,7 @@
 }
 
 .docs-footer a {
-  color: #0057f0;
+  color: #2473ff;
 }
 
 .docs-content .code .hljs-comment {
