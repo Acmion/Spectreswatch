@@ -3761,6 +3761,10 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 .btn {
   background: #0b0b0b;
   border: thin solid #0057f0; 
